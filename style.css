@@ -1,0 +1,237 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background: #dadada;
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0;
+}
+
+.top {
+    display: block;
+    text-align: center;
+    padding: 2vw;
+    background: url('https://images.unsplash.com/photo-1426840963626-ffdf2d7ef80b?ixlib=rb-0.3.5');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+}
+#selfpic {
+    width: 15vw;
+    height: 15vw;
+    opacity: .9;
+    border: .5vw double #dadada;
+    border-radius: 50%;
+    margin: 3vw;
+}
+#selfpic:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+#title {
+    font-size: calc(12px + 4vw);
+    margin: 0;
+    color: #dadada;
+}
+#title:hover {
+    opacity: .7;
+    background: rgba(233, 134, 191, 0.15);
+    transition: all .5s cubic-bezier(0,.3,.7,1);
+}
+#github {
+    background: none;
+    font-size: inherit;
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: #c399ce;
+    font-size: 3vw;
+    background: #333;
+    padding: 5px;
+    opacity: .8;
+    transition: transform 0.6s ease-in-out;
+    margin-right: 5px;
+}
+a:hover {
+    background: white;
+    transition: all .5s cubic-bezier(0,.1,.6,1);
+}
+
+nav {
+    display: block;
+    text-align: center;
+    position: relative;
+    background: #333;
+    padding: 1px;
+    top: 0;
+    z-index: 2;
+}
+ul {
+    padding: 0;
+}
+li {
+    display: inline-block;
+    margin: 0 4vw;
+    font-size: 6vw;
+}
+.fixed-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.content {
+    display: block;
+    padding: 0 10%;
+    /* margin-top: -2px; */
+}
+h3 {
+    font-size: 3vw;
+}
+
+section h3 {
+    position: relative;
+}
+section h3:hover {
+    color: #dadada;
+}
+section h3:hover:after {
+    width: 100%;
+}
+section h3:after {
+    position: absolute;
+    display: block;
+    content: "";
+    z-index: -1;
+    top: 0;
+    height: 100%;
+    opacity: .5;
+    width: 0;
+    background: radial-gradient(#da7098, #5F4B8B), #333;
+    transition: all .2s cubic-bezier(0,.3,.8,1);
+}
+
+p {
+    font-size: 2vw;
+    line-height: 3.6vw;
+}
+a img {
+    max-width: 80vw;
+}
+
+#portfolio~a {
+    display: inline-block;
+    position: relative;
+    background: none;
+    padding: 0;
+}
+#portfolio~a::after {
+    position: absolute;
+    transition: opacity 0.7s ease;
+    opacity: 0;
+    content: attr(data-title);
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    left: 0;
+    padding: 25% 0;    
+    height: 100%;
+    width: 100%;
+    background: rgba(68, 30, 72, 0.5);
+    z-index: 4;
+}
+#portfolio~a:hover::after {
+    opacity: 1;
+}
+
+.marquee {
+    width: 200px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    background: #dadada;
+    color: #5F4B8B;
+}
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    text-indent: 0;
+    animation: marquee 3s linear infinite;
+}
+.marquee span:hover {
+    animation-play-state: paused;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+
+/* .carousel {
+    display: block;
+    position: relative;
+    align-content: center;
+    overflow: hidden;
+    width: 60vw;
+    height: 40vw;
+    margin: 50px auto;
+    padding: 0;
+    border: 1px solid #c399ce;
+    box-shadow: 2px 3px 15px #5F4B8B;
+} 
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin: 0 1em;
+    padding: 0 2em;
+    font-size: 2vw;
+    color: #dadada;
+    background: rgba(95, 75, 139, .5);
+}
+.active .buttons {
+    display: block;
+    position: relative;
+    text-align: center;
+    background: rgba(195, 153, 206, .2);
+    padding: 1vw 0 50vw 0;
+    z-index: 3;
+}
+.active li {
+    position: absolute;
+    top: 600px;
+}
+.active li.current {
+    top: 0;
+}
+
+.slides {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.slides li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.slides img {
+    width: 60vw;
+    height: 40vw;
+} */
+
+footer { 
+    text-align: center;
+    opacity: .5;
+}
