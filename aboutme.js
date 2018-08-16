@@ -16,7 +16,7 @@
 var imgx =  document.getElementById('selfpic');
 
 function changePic() {
-  imgx.src = (imgx.getAttribute('src') === "art.png") ? "pic.png" : "art.png";
+  imgx.src = (imgx.getAttribute('src') === "img/art.jpg") ? "img/pic.jpg" : "img/art.jpg";
 }
 
 
