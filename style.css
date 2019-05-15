@@ -116,7 +116,8 @@ section h3:after {
     height: 100%;
     opacity: .5;
     width: 0;
-    background: radial-gradient(#da7098, #5F4B8B), #333;
+    /* default gradient direction */
+    background: linear-gradient(to bottom, #da7098, #5F4B8B), #333;
     transition: all .2s cubic-bezier(0,.3,.8,1);
 }
 
