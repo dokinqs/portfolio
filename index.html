@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141494542-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-141494542-1');
-    </script>
     <meta charset="UTF-8">
-    <meta name="author" content="Karen Zhao">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karen Zhao</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway"/>
-    <link rel="shortcut icon" type="image/png" href="img/carroticon.png"/>
+    <meta name="theme-color" content="#8BA9E6">
+    <meta name="author" content="Karen Zhao">
+    <meta name="description" content="Karen Zhao - frontend developer portfolio">
+    <meta name="keywords" content="Karen Zhao dokinqs portfolio">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,300">
+    <link rel="shortcut icon" type="image/png" href="img/carroticon.png">
 </head>
 
 <body>
 <div class="top">
-    <img src="./img/art.jpg" id="selfpic" onclick="changePic()"/>
-    <h1 id="title">Hello, I'm Karen Zhao</h1>
-    <p><em>
-        /* Frontend Developer */
-        <a href="https://dokinqs.github.io/" id="github" target="_blank">dokinqs</a>
-    </em></p>
-    <a href="https://github.com/dokinqs" target="_blank">GitHub</a>
-    <a href="https://codepen.io/dokinqs" target="_blank">CodePen</a> 
+    <!-- <img src="./img/art.jpg" id="selfpic" alt="me" onclick="changePic()"/> -->
+    <h1 class="name">Hello, I'm Karen Zhao</h1>
+    <p>
+        <em>/* Frontend Developer */</em>
+    </p>
+    <p>
+        <a href="https://github.com/dokinqs" target="_blank">GitHub</a>
+    </p> 
+    <!-- <a href="https://codepen.io/dokinqs" target="_blank">CodePen</a>  -->
 </div>
 
 <nav id="navbar">
     <ul>
-        <li><a href="#github">ABOUT ME</a></li>
+        <li class="logo"><a href="#" class="logotext">@dokinqs</a></li>
+        <li><a href="#about">ABOUT</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#contactme">CONTACT ME</a></li>
+        <li><a href="#contact">CONTACT</a></li>
     </ul>
 </nav>
 
@@ -42,54 +39,68 @@
     <p style="text-align:center;">
         <em>Not until we are lost do we begin to understand ourselves.</em>
     </p>
-    <section>
-        <h3 id="aboutme">> About Me</h3>
+    <section class="about">
+        <h3 id="about">> About Me</h3>
         <p>
-            I graduated from the Web Development Immersive course at General Assembly in New York, where I completed full-stack projects using frontend and backend technologies such as JavaScript, React, Node, Express, and Ruby on Rails. I enjoy creating things that allow me to empower myself and explore my creativity and problem-solving skills.
-        </p>
-        <p>
-            Aside from programming, I am passionate about understanding the world through travel, food, and language. My hobbies include dancing, drawing, playing badminton, and taking pictures of food.
+            I completed the Web Development Immersive course at General Assembly in New York, where I created full-stack projects using frontend and backend technologies such as JavaScript, React, Node, Express, and Ruby on Rails. I enjoy creating things that allow me to empower myself and explore my creativity and problem-solving skills. Aside from programming, I am passionate about understanding the world through travel, food, and language. My hobbies include dancing, badminton, photography, and drawing.
         </p> 
     </section>
 
-    <section>
+    <section class="portfolio">
         <h3 id="portfolio">>> Portfolio</h3>
-        <p>A hodgepodge of some things that look good and do stuff.</p>
-    
-        <h4><i>(React && Rails && OAuth2 App)</i>&nbsp;&nbsp; Flashcardzzz (June 2018)</h4>
-        <a href="https://rapid-bedroom.surge.sh/" target="_blank" data-title="Flashcardzzz">
-            <img src="./img/flashcardzzz.jpg" alt="flashcardzzz"></a>
-
-
-        <h4><i>(React && Express && OAuth2 App)</i>&nbsp;&nbsp; H@ckUp (May 2018)</h4>
-        <a href="https://tranquil-mesa-50145.herokuapp.com/" target="_blank" data-title="H@ckUp">
-            <img src="./img/hackup.jpg" alt="hackup"></a>
+        <!-- <p>A hodgepodge of some things that look good and do stuff.</p> -->
+        <div class="container">
         
-        <h4><i>(Node && Express CRUD App)</i>&nbsp;&nbsp; Travel Bucket List (April 2018)</h4>
-        <a href="https://fierce-reaches-20888.herokuapp.com/" target="_blank" data-title="Travel Bucket List">
-            <img src="./img/travelcountries.jpg" alt="travel bucket list"></a>
-        
-        <h4><i>(Javascript, HTML, CSS)</i>&nbsp;&nbsp; Trivia Race Redemption (March 2018)</h4>
-        <a href="https://dokinqs.github.io/trivia-race-redemption/" target="_blank" data-title="trivia race">
-            <img src="./img/gamepage.jpg" alt="game page"></a>
-        
-        <h4><i>(Javascript, HTML, CSS)</i>&nbsp;&nbsp;  (2018)</h4>
-        <a href="https://dokinqs.github.io/netflix-layout/netflix.html" target="_blank" data-title="netflix layout">
-            <img src="./img/netflixsshot.jpg" alt="netflix clone"></a>
-        <a href="https://dokinqs.github.io/JS30/" target="_blank" data-title="javascript 30">
-            <img src="./img/JS30.jpg" alt="JS30"></a>
-        <a href="https://dokinqs.github.io/cssgrid/20%20-%20CSS%20Grid%20Image%20Gallery/image-gallery-START.html" target="_blank" data-title="css grid">
-            <img src="./img/dogegallery.jpg" alt="shiba css grid"></a>
-    </section>
+            <!-- <h4><i>(React, Rails, OAuth2 App)</i></h4> -->
+            <div class="imgdiv">
+                <a href="https://rapid-bedroom.surge.sh/" target="_blank" data-title="Flashcardzzz">
+                    <img src="./img/flashcardzzz.jpg" alt="flashcardzzz">
+                </a>
+            </div>
+            <!-- <h4><i>(React, Express, OAuth2 App)</i></h4> -->
+            <div class="imgdiv">
+                <a href="https://tranquil-mesa-50145.herokuapp.com/" target="_blank" data-title="H@ckUp">
+                    <img src="./img/hackup.jpg" alt="hackup">
+                </a>
+            </div>
+            <!-- <h4><i>(Node, Express CRUD App)</i></h4> -->
+            <div class="imgdiv">
+                <a href="https://fierce-reaches-20888.herokuapp.com/" target="_blank" data-title="Travel Bucket List">
+                    <img src="./img/travelcountries.jpg" alt="travel bucket list">
+                </a>
+            </div>
+            <!-- <h4><i>(Javascript, HTML, CSS)</i></h4> -->
+            <div class="imgdiv">
+                <a href="https://dokinqs.github.io/trivia-race-redemption/" target="_blank" data-title="trivia race">
+                    <img src="./img/gamepage.jpg" alt="game page"
+                ></a>
+            </div>
+            <div class="imgdiv">
+                <a href="https://dokinqs.github.io/netflix-layout/netflix.html" target="_blank" data-title="netflix layout">
+                    <img src="./img/netflixsshot.jpg" alt="netflix clone">
+                </a>
+            </div>
+            <div class="imgdiv">
+                <a href="https://dokinqs.github.io/JS30/" target="_blank" data-title="javascript 30">
+                    <img src="./img/JS30.jpg" alt="JS30">
+                </a>
+            </div>
+            <div class="imgdiv">
+                <a href="https://dokinqs.github.io/cssgrid/20%20-%20CSS%20Grid%20Image%20Gallery/image-gallery-START.html" target="_blank" data-title="css grid">
+                    <img src="./img/dogegallery.jpg" alt="shiba css grid">
+                </a>
+            </div>
+        </section>
 
-    <section>
-        <h3 id="contactme">>>> Contact Me</h3>
-        <p class="marquee"><span id="banner"></span></p>
-        <p>Thanks for checking out my page, Visitor # 73.</p>
-        <p>Feel free to browse my links, or send me a message...</p>
-        <a href="mailto:karen.zhao18@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/karen-zhao">LinkedIn</a>
-        <a href="https://twitter.com/dokinqs" target="_blank">Twitter</a> 
+        <section class="contact">
+            <h3 id="contact">>>> Contact Me</h3>
+            <!-- <span class="marquee"><span id="banner"></span></p> -->
+            <!-- <p>Thanks for checking out my page, Visitor # 73.</p>
+            <p>Feel free to browse my links, or send me a message...</p> -->
+            <a href="mailto:karen.zhao18@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/karen-zhao">LinkedIn</a>
+            <a href="https://twitter.com/dokinqs" target="_blank">Twitter</a> 
+        </div>
     </section>
 </div>
 
@@ -119,9 +130,17 @@
     <p>
         <em>We must etch out our place in this world and validate our existence within it.</em>
     </p>
-    <a href="#top" class="teleport">^ Teleport ^</a>
+    <!-- <a href="#top" class="teleport">^ Teleport ^</a> -->
 </footer>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141494542-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-141494542-1');
+</script>
 <script src="aboutme.js"></script>
 </body> 
 </html>
