@@ -42,11 +42,13 @@ a.github, nav a, .contact a {
     font-size: 20px;
     background: #000;
     padding: 5px;
-    transition: transform 0.5s ease-in-out;
 }
 a.github:hover, #navbar a:hover, .contact a:hover {
     color: #fff;
-    transition: all 0.5s cubic-bezier(0,0.1,0.6,1);
+    transition: all 0.5s cubic-bezier(0, 0.2, 0.7, 1);
+}
+a.github, a.github:hover {
+    background: none;
 }
 
 nav {
@@ -153,15 +155,19 @@ p.quote {
     font-size: 12px;
 }
 
-@media screen and (max-width: 435px) {
-    #navbar a:hover, .contact a:hover {
+@media screen and (max-width: 391px) {
+    #navbar a:hover, 
+    .contact a:hover {
         background: #fff;
-        transition: all 0.5s cubic-bezier(0,0.1,0.6,1);
     }
-    li.logo a.logotext, .fixed-nav .logo a:hover, #navbar a:hover {
+    li.logo a.logotext, 
+    .fixed-nav .logo a:hover, 
+    #navbar a:hover {
         color: #8BA9E6;
     }
-    li.logo a.logotext, li.logo a.logotext:hover, #navbar a.logotext:hover {
+    li.logo a.logotext, 
+    li.logo a.logotext:hover, 
+    #navbar a.logotext:hover {
         background: #8BA9E6;
     }
     #navbar .logo::after {
