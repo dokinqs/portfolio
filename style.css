@@ -6,11 +6,12 @@
 }
 body {
     font-family: 'Exo 2', Helvetica, sans-serif;
+    font-display: auto;
     margin: 0;
 }
 
 .top {
-    background: url('./Starry-Blue.webp'),#333;
+    background: url('img/Starry-Blue.webp'), url('img/Starry-Blue.jpg'), #333;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -37,6 +38,7 @@ body {
     color:#fff;
     margin-bottom: 0;
     opacity: 0.8;
+    font-style: italic;
 }
 /* #navbar a,  */
 .top a, .contact a {
@@ -154,6 +156,7 @@ div a:hover:after {
 }
 
 .quote { 
+    font-style: italic;
     text-align: center;
     opacity: .5;
 }
