@@ -28,9 +28,14 @@ body {
     opacity: .5;
     cursor: pointer;
 } */
-.name {
+.name-link {
+    text-decoration: none;
+    color: #8BA9E6;
     font-size: calc(20px + 3vw);
     margin: 0;
+    color: #8BA9E6;
+}
+.name-link:hover {
     color: #fff;
 }
 .top > p:first-of-type {
@@ -39,7 +44,7 @@ body {
     opacity: 0.8;
     font-style: italic;
 }
-.top a, nav a, .contact a {
+a.github, nav a, .contact a {
     text-decoration: none;
     color: #8BA9E6;
     font-size: 20px;
@@ -47,7 +52,7 @@ body {
     padding: 5px;
     transition: transform 0.5s ease-in-out;
 }
-.top a:hover , #navbar a:hover, .contact a:hover {
+a.github:hover , #navbar a:hover, .contact a:hover {
     background: white;
     transition: all 0.5s cubic-bezier(0,0.1,0.6,1);
 }
@@ -137,7 +142,7 @@ h3 {
     padding: 25% 0;    
     height: 100%;
     width: 100%;
-    background: rgba(12, 17, 58, 0.7);
+    background: #0c113ab3;
     z-index: 4;
     left: 0;
     top: 0;
@@ -149,6 +154,7 @@ div a:hover::after {
 .contact a {
     margin-right: 5px;
 }
+
 p.quote { 
     font-style: italic;
     text-align: center;
@@ -157,14 +163,19 @@ p.quote {
 }
 
 @media screen and (max-width: 400px) {
-    li.logo a.logotext {
-        color: #fff;
+    li.logo a.logotext, .fixed-nav .logo a:hover, #navbar a:hover {
+        color: #8BA9E6;
     }
-    .fixed-nav .logo a:hover {
-        color: #fff;
+    li.logo a.logotext, li.logo a.logotext:hover, #navbar a.logotext:hover {
+        background: #8BA9E6;
+    }
+    #navbar .logo::after {
+        position: absolute;
+        content: 'KMZ';
+        color: #333;
+        font-size: 10px;
     }
 }
-
 @media screen and (max-width: 833px) {
     a img {
         max-width: 90vw;
@@ -185,80 +196,3 @@ p.quote {
         height: 230px;
     }
 }
-
-/* .marquee {
-    width: 200px;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    background: #dadada;
-    color: #5F4B8B;
-}
-.marquee span {
-    display: inline-block;
-    padding-left: 100%;
-    text-indent: 0;
-    animation: marquee 3s linear infinite;
-}
-.marquee span:hover {
-    animation-play-state: paused;
-} */
-/* @keyframes marquee {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
-} */
-
-
-/* .carousel {
-    display: block;
-    position: relative;
-    align-content: center;
-    overflow: hidden;
-    width: 60vw;
-    height: 40vw;
-    margin: 50px auto;
-    padding: 0;
-    border: 1px solid #c399ce;
-    box-shadow: 2px 3px 15px #5F4B8B;
-} 
-
-button {
-    cursor: pointer;
-    outline: none;
-    border: none;
-    margin: 0 1em;
-    padding: 0 2em;
-    font-size: 2vw;
-    color: #dadada;
-    background: rgba(95, 75, 139, 0.5);
-}
-.active .buttons {
-    display: block;
-    position: relative;
-    text-align: center;
-    background: rgba(195, 153, 206, 0.2);
-    padding: 1vw 0 50vw 0;
-    z-index: 3;
-}
-.active li {
-    position: absolute;
-    top: 600px;
-}
-.active li.current {
-    top: 0;
-}
-
-.slides {
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-}
-.slides li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.slides img {
-    width: 60vw;
-    height: 40vw;
-} */
