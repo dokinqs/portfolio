@@ -7,7 +7,6 @@
 body {
     font-family: 'Exo 2', Helvetica, sans-serif;
     font-weight: 200;
-    font-style: normal;
     margin: 0;
 }
 a {
@@ -20,6 +19,7 @@ a {
     background-repeat: no-repeat;
     text-align: center;
     padding: 34vh 10vw;
+    height: 92vh;
 }
 .name-link {
     text-decoration: none;
@@ -115,7 +115,6 @@ h3 {
     font-weight: 300;
 }
 .content {
-    display: block;
     padding: 0 5%;
 }
 .about p {
