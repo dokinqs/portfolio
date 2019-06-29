@@ -9,6 +9,9 @@ body {
     font-weight: 200;
     margin: 0;
 }
+p {
+    margin: 0;
+}
 a {
     font-weight: 300;
 }
@@ -19,7 +22,7 @@ a {
     background-repeat: no-repeat;
     text-align: center;
     padding: 34vh 10vw;
-    height: 92vh;
+    height: 94vh;
 }
 .name-link {
     text-decoration: none;
@@ -115,9 +118,13 @@ h3 {
     font-weight: 300;
 }
 .content {
-    padding: 0 5%;
+    padding: 10px 5%;
 }
-.about p {
+.dark {
+    background: #000;
+    color: #fff;
+}
+p {
     font-size: 16px;
     line-height: 24px;
 }
@@ -158,6 +165,12 @@ p.quote {
     text-align: center;
     opacity: 0.6;
     font-size: 12px;
+}
+
+footer {
+    font-size: 10px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 @media screen and (max-width: 330px) {
