@@ -19,6 +19,31 @@ a {
     font-weight: 300;
 }
 
+.wrapper {
+    opacity: 0.8; 
+}
+.blocker {
+    /* background-color: rgba(4, 27, 78, 0.7);  */
+    background: url("https://images.unsplash.com/photo-1478428036186-d435e23988ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&w=1800&q=100");
+    /* background-size: cover; */
+    opacity: 0.7; 
+    z-index: 99;
+    top: 0; 
+    left: 0; 
+    width: 100vw;
+    height: 100vh; 
+    position: fixed;
+}
+.sign {
+    position: fixed; 
+    z-index: 99;
+    font-size: 8vw;
+    font-weight: bold;
+    text-align: center;
+    top: 40%;  
+    left: 15%;
+    color: white;
+}
 .top {
     background: url('img/starryzoom.jpg'), #000;
     background-size: cover; 
